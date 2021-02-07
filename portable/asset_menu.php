@@ -17,7 +17,7 @@ require_once('./includes/header.inc.php');
   <li style="margin-top:.5em;margin-bottom:.5em"><input type="button" onclick="document.location.href='authenticate.php?menu_id=1';" value="Move Assets" style="width:90%;height:56px;font-size:24;"></li>
   <li style="margin-top:.5em;margin-bottom:.5em"><input type="button" onclick="document.location.href='authenticate.php?menu_id=2';" value="Check Out Assets" style="width:90%;height:56px;font-size:24;"></li>
   <li style="margin-top:.5em;margin-bottom:.5em"><input type="button" onclick="document.location.href='authenticate.php?menu_id=3';" value="Check In Assets" style="width:90%;height:56px;font-size:24;"></li>
-  <li style="margin-top:.5em;margin-bottom:.5em"><input type="button" onclick="document.location.href='authenticate.php?menu_id=4';" value="Receive Assets" style="width:90%;height:56px;font-size:24;"></li>
+  <li style="margin-top:.5em;margin-bottom:.5em"><input type="button" onclick="document.location.href='authenticate.php?menu_id=4';" value="Amogela Assets" style="width:90%;height:56px;font-size:24;"></li>
   <li style="margin-top:.5em;margin-bottom:.5em"><input type="button" onclick="document.location.href='authenticate.php?menu_id=5';" value="Assets Audit" style="width:90%;height:56px;font-size:24;"></li>
   <li style="margin-top:.5em;margin-bottom:.5em"><input type="button" onclick="document.location.href='index.php';" value="Main Menu" style="background-color:#CCCCCC;border:2px solid #000000;width:90%;height:56px;font-size:24;"></li>  
   </ol>
