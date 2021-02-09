@@ -382,7 +382,7 @@
 			return parent::format($strFormat);
 		}
 
-		public function setTime($intHour, $intMinute, $intSecond, $microsecond = 0) {
+		public function setTime($intHour, $intMinute, $intSecond = 0, $microsecond = 0) {
 			// For compatibility with PHP 5.3
 			if (is_null($intSecond)) $intSecond = 0;
 
