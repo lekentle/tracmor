@@ -404,8 +404,8 @@ INSERT INTO `state_province` (`state_province_id`, `country_id`, `short_descript
 INSERT INTO `courier` (`courier_id`, `short_description`, `active_flag`) VALUES
 	(1,'default',1);
 
-INSERT INTO `role` (`role_id`, `short_description`, `long_description`, `created_by`, `creation_date`) VALUES
-	(1,'Administrator','Administrator account will access to everything',1,NOW());
+--INSERT INTO `role` (`role_id`, `short_description`, `long_description`, `created_by`, `creation_date`) VALUES
+--	(1,'Administrator','Administrator account will access to everything',1,NOW());
 
 INSERT INTO `module` (`module_id`, `short_description`) VALUES
 	(1,'home'),

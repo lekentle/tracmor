@@ -16,16 +16,16 @@
 		case 'test':
 		case 'stage':
 		case 'prod':
-			define ('__DOCROOT__', '/var/www/tracmor');
+			define ('__DOCROOT__', '/opt/lampp/htdocs/tracmor');
 			define ('__VIRTUAL_DIRECTORY__', '');
 			define ('__SUBDIRECTORY__', '');
 
 			define('DB_CONNECTION_1', serialize(array(
 				'adapter' => 'MySqli5',
 				'server' => 'localhost',
-				'port' => null,
+				'port' => 3306,
 				'database' => 'tracmor',
-				'username' => '',
+				'username' => 'root',
 				'password' => '',
 				'profiling' => false,
 				'encoding' => 'utf8')));

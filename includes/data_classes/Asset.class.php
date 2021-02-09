@@ -222,6 +222,7 @@
 
 			return $strToReturn;
 		}
+		//Global value for access_type_id TODO:
 		
 		public static function LoadByAssetCodeWithCustomFields($strAssetCode) {
 			Asset::QueryHelper($objDatabase);

@@ -1,0 +1,11 @@
+#Shell scripts
+*.sh
+
+#SQL file
+.*txt
+
+#SQL files
+*.sql
+
+
+
