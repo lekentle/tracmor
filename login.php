@@ -228,7 +228,6 @@
 		}
 	}
 
-    QApplication::VarDump();
-
-	//LoginForm::Run('LoginForm', QApplication::$DocumentRoot . __SUBDIRECTORY__ . '/login.tpl.php');
+  
+  LoginForm::Run('LoginForm', QApplication::$DocumentRoot . __SUBDIRECTORY__ . '/login.tpl.php');
 ?>
