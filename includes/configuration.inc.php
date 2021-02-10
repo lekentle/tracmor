@@ -25,7 +25,7 @@
 				'server' => 'localhost',
 				'port' => 3306,
 				'database' => 'tracmor',
-				'username' => 'root',
+				'username' => 'ul',
 				'password' => '',
 				'profiling' => false,
 				'encoding' => 'utf8')));
