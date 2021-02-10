@@ -153,6 +153,8 @@
 		}
 
 		protected function btnLogin_Click($strFormId, $strControlId, $strParameter) {
+            
+            console.log('Login...');
 
 			$blnError = false;
 
