@@ -18,7 +18,7 @@
 		case 'prod':
 			define ('__DOCROOT__', '/opt/lampp/htdocs/tracmor');
 			define ('__VIRTUAL_DIRECTORY__', '');
-			define ('__SUBDIRECTORY__', '');
+			define ('__SUBDIRECTORY__', '/tracmor');
 
 			define('DB_CONNECTION_1', serialize(array(
 				'adapter' => 'MySqli5',
