@@ -16,7 +16,7 @@
 		case 'test':
 		case 'stage':
 		case 'prod':
-			define ('__DOCROOT__', '/opt/lampp/htdocs/tracmor');
+			define ('__DOCROOT__', '/opt/lampp/htdocs');
 			define ('__VIRTUAL_DIRECTORY__', '');
 			define ('__SUBDIRECTORY__', '/tracmor');
 
