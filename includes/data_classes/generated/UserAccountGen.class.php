@@ -1360,6 +1360,8 @@
 		 * @return string the query statement
 		 */
 		protected static function BuildQueryStatement(&$objQueryBuilder, QQCondition $objConditions, $objOptionalClauses, $mixParameterArray, $blnCountOnly) {
+
+			error_log('UserAccount::buildQueryStatement');
 			// Get the Database Object for this Class
 			$objDatabase = UserAccount::GetDatabase();
 
