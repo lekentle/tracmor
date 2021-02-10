@@ -1423,8 +1423,10 @@
 		public static function QuerySingle(QQCondition $objConditions, $objOptionalClauses = null, $mixParameterArray = null) {
 			// Get the Query Statement
 			try {
+				error_log('UserAccountGen::QuerySingle - try');
 				$strQuery = UserAccount::BuildQueryStatement($objQueryBuilder, $objConditions, $objOptionalClauses, $mixParameterArray, false);
 			} catch (QCallerException $objExc) {
+                error_log('UserAccountGen::QuerySingle - catch');
 				$objExc->IncrementOffset();
 				throw $objExc;
 			}
