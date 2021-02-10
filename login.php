@@ -17,7 +17,11 @@
 	 * You should have received a copy of the GNU General Public License
 	 * along with Tracmor; if not, write to the Free Software
 	 * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+	 * 
 	 */
+	
+ini_set('display_errors', 1); 
+error_reporting(E_ALL);
 
 	require_once('./includes/prepend.inc.php');
 
