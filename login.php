@@ -159,6 +159,8 @@
 			$strUsername = $this->txtUsername->Text;
 			$strPassword = $this->txtPassword->Text;
 
+			console.log ( 'Username is' . $strUsername . ' ; Password is:' . $strPassword);
+
 			$objUserAccount = UserAccount::LoadByUsername($strUsername);
 			$errorMessage = 'Invalid username or password.';
 
