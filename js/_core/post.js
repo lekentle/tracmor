@@ -276,7 +276,6 @@
 
 				objRequest.onreadystatechange = qcodo.handleAjaxResponse;
 				qcodo.ajaxRequest = objRequest;
-				alert(strPostData);
 				objRequest.send(strPostData);
 			};
 		};
