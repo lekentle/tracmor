@@ -29,7 +29,7 @@
 	 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 	 * SOFTWARE.
 	 */
-
+console.log('Entering qcodo.inc');
 	// Versioning Information
 	define('QCODO_VERSION', '0.4.22');
 
