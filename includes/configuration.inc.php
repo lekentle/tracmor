@@ -9,7 +9,7 @@
 	// To use, simply rename or copy this file to includes/configuration.inc.php, and begin making modifications
 	// to the configuration constants as it makes sense for your PHP and docroot installation.
 
-	define('SERVER_INSTANCE', 'dev');
+	define('SERVER_INSTANCE', 'prod');
 
 	switch (SERVER_INSTANCE) {
 		case 'dev':
@@ -25,7 +25,7 @@
 				'server' => 'localhost',
 				'port' => 3306,
 				'database' => 'tracmor',
-				'username' => 'ul',
+				'username' => 'root',
 				'password' => '',
 				'profiling' => false,
 				'encoding' => 'utf8')));
