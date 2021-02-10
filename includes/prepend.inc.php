@@ -3,7 +3,7 @@
 		// Ensure prepend.inc.php is only executed once
 		define('__PREPEND_INCLUDED__', 1);
 
-         console.log('Starting Prepend');
+         error_log('Starting Prepend');
 		/////////////////////////////////
 		// Load in the Configuration File
 		/////////////////////////////////

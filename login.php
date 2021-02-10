@@ -20,8 +20,6 @@
 	 * 
 	 */
 	
-ini_set('display_errors', 1); 
-error_reporting(E_ALL);
 
 	require_once('./includes/prepend.inc.php');
 
@@ -158,14 +156,14 @@ error_reporting(E_ALL);
 
 		protected function btnLogin_Click($strFormId, $strControlId, $strParameter) {
             
-            console.log('Login...');
+            error_log('btnLogin_Click...');
 
 			$blnError = false;
 
 			$strUsername = $this->txtUsername->Text;
 			$strPassword = $this->txtPassword->Text;
 
-			console.log ( 'Username is' . $strUsername . ' ; Password is:' . $strPassword);
+			error_log( 'Username is' . $strUsername . ' ; Password is:' . $strPassword);
 
 			$objUserAccount = UserAccount::LoadByUsername($strUsername);
 			$errorMessage = 'Invalid username or password.';
