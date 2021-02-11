@@ -1773,7 +1773,7 @@
 				implode("\r\n    ", $this->strJoinArray));
 
 			// Custom "FROM" Columns
-			if ((strCustomFromArray!=null)&&(count($this->strCustomFromArray)))
+			if ((!empty($this->strCustomFromArray))&&(count($this->strCustomFromArray)))
 				$strSql .= ",\r\n    " . implode(",\r\n    ", $this->strCustomFromArray);
 
 			// WHERE Clause
