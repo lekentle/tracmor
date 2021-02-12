@@ -24,7 +24,7 @@
 				'adapter' => 'MySqli5',
 				'server' => 'localhost',
 				'port' => 3306,
-				'database' => 'tracmor',
+				'database' => 'Tracmor',
 				'username' => 'root',
 				'password' => '',
 				'profiling' => false,
