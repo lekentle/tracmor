@@ -1796,7 +1796,7 @@
 			// For Distinct Count Queries
 			if ($this->blnCountOnlyFlag && $this->blnDistinctFlag)
 				$strSql .= "\r\n) as q_count_table";
-
+                        error_log('SQL Statement:'. $strSql);
 			return $strSql;
 		}
 
