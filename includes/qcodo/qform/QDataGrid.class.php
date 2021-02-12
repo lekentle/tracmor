@@ -202,7 +202,7 @@
 					$intEnd,
 					$this->TotalItemCount);
 			} else {
-				$intCount = count($this->objDataSource);
+				$intCount = empty($this->objDataSource) ? 0 : count($this->objDataSource);
 				if ($intCount == 0)
 					$strToReturn .= sprintf($this->strLabelForNoneFound, $this->strNounPlural);
 				else if ($intCount == 1)
