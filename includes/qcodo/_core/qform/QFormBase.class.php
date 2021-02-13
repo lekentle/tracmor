@@ -498,11 +498,11 @@
 				$objControl->SetForm(null);
 
 			// Use PHP "serialize" to serialize the form
-                        try{
+                       // try{
 			$strSerializedForm = serialize($objForm);
-                        } catch (Throwable $e){
+                        /*} catch (Throwable $e){
                             error_log('Caught exception: '.  $e->getMessage());
-                        }			
+                        }*/			
 
                         // Setup and Call the FormStateHandler to retrieve the PostDataState to return
 			$strSaveCommand = array(QForm::$FormStateHandler, 'Save');
