@@ -500,7 +500,7 @@
 			// Use PHP "serialize" to serialize the form
                         try{
 			$strSerializedForm = serialize($objForm);
-                        } catch (Exception $e){
+                        } catch (Throwable $e){
                             error_log('Caught exception: '.  $e->getMessage());
                         }			
 
