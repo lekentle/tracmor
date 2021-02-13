@@ -67,7 +67,7 @@
 			$this->flaCompanyLogo->TemporaryUploadPath = __TRACMOR_TMP__;
 			$this->flaCompanyLogo->FileAssetType = QFileAssetType::Image;
 			$this->flaCompanyLogo->CssClass = 'file_asset';
-            $this->flaCompanyLogo->imgFileIcon->CssClass = 'file_asset_icon';
+                        $this->flaCompanyLogo->imgFileIcon->CssClass = 'file_asset_icon';
 			$this->flaCompanyLogo->DialogBoxHtml = '<h1>Upload Company Logo</h1><p>Please select an image file to upload.</p>';
 
 			if (!QApplication::$TracmorSettings->CompanyLogo) {
