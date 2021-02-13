@@ -204,7 +204,6 @@
 				// If No Path is Specified, then we are OUTPUTTING to the BROWSER DIRECTLY
 				if (!$strPath)
 					$this->SetupContentType();
-                                    error_log('Username:'. shell_exec(`whoami`));
 				switch ($this->strImageType) {
 					case QImageType::Jpeg:
 						if ($strPath)
@@ -488,6 +487,7 @@
 
 			if (!($strImageType = $this->strImageType))
 				$strImageType = $this->strSourceImageType;
+                        error_log('Username:'. shell_exec(`whoami`));
 
 			switch ($strImageType) {
 				case QImageType::Gif:
