@@ -33,9 +33,9 @@
 		// before serializing the object to the __formstate
 		// (Due to the potentially humungous size of some datasets, it is more efficient
 		// to requery than to serialize and put as a hidden form element)
-		public function __serialize() {
+		/*public function __serialize() {
 			$this->objDataSource = null;
-		}
+		}*/
 
 		// PaginatedControls should (in general) never have anything that ever needs to be validated -- so this always
 		// returns true.
