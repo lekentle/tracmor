@@ -796,7 +796,8 @@
 		public static function UpdateControls($objCustomFieldArray, $arrCustomFields) {
 			
 			// Loop through all custom fields
-			for ($i=0; $i < count($objCustomFieldArray); $i++) {
+                        $loopCount = empty($objCustomFieldArray) ? 0 : count($objCustomFieldArray);       
+			for ($i=0; $i < $loopCount;$i++) {
 				// Text Boxes
 				if ($objCustomFieldArray[$i]->CustomFieldQtypeId == 1 || $objCustomFieldArray[$i]->CustomFieldQtypeId == 3) {
 					if ($objCustomFieldArray[$i]->CustomFieldSelection) {
