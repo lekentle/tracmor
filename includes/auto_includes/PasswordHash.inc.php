@@ -154,7 +154,7 @@ class PasswordHash {
 		$count = (1 << $count_log2) - 1;
 
 		$output = '_';
-                if (!is_null($itoa64){
+                if (!is_null($itoa64)){
                     $output .= $this->itoa64[$count & 0x3f];
                     $output .= $this->itoa64[($count >> 6) & 0x3f];
                     $output .= $this->itoa64[($count >> 12) & 0x3f];
