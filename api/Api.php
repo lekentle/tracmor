@@ -41,7 +41,7 @@
             private function isTheseParametersAvailable($params){
 
                 foreach($params as $param){
-                    if(!isset($payload[$param])){
+                    if(!isset($this->$payload[$param])){
                             return false; 
                     }
                 }
@@ -94,13 +94,13 @@
             }
             
             public function getResponse(){
-                error_log("Error". $this->response['error']);
+
                 return $this->response;
             }
             
         }
         
-        error_log("Api Call:". $_GET['apicall']); 
+
         
         $api = new Api($_GET['apicall'], $_POST);
         
