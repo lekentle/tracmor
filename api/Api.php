@@ -1,5 +1,5 @@
 <?php 
-                        
+        header("Content-Type: application/json; charset=UTF-8");                                
         error_log("Entering Api"); 
        
 	require_once('../includes/prepend.inc.php');
