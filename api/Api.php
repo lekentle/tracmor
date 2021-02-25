@@ -83,8 +83,8 @@
             }
             
             public function getResponse(){
-                
-            return $this->response;
+                error_log("Error". $this->response['error']);
+                return $this->response;
             }
             
         }
