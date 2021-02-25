@@ -55,7 +55,7 @@
             private function login (){
                 
                
-       		if(isTheseParametersAvailable(array('username', 'password'))){
+       		if($this->isTheseParametersAvailable(array('username', 'password'))){
 					
                     $username = $payload['username'];
                     $password = $payload['password']; 
