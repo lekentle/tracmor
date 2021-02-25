@@ -4,7 +4,7 @@
        
 	require_once('../includes/prepend.inc.php');
 	//QApplication::Authenticate(3);
-	require_once(__FORMBASE_CLASSES__ . '/UserAccountListFormBase.class.php');
+	//require_once(__FOjkkRMBASE_CLASSES__ . '/UserAccountListFormBase.class.php');
 
 
         
@@ -88,8 +88,10 @@
             }
             
         }
-
-        $api = new Api(_GET['apicall'], _POST);
+        
+        error_log("Api Call:". $_GET['apicall']); 
+        
+        $api = new Api($_GET['apicall'], $_POST);
         
         echo json_encode($api->getResponse());
 	
