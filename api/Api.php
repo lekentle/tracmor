@@ -22,7 +22,7 @@
                 $this->request = $payload;
                 //Default response
                 $this->response['error'] = true; 
-                $this->$response['message'] = 'Invalid Operation Called';
+                $this->response['message'] = 'Invalid Operation Called';
              }
 
             
