@@ -3,7 +3,7 @@
         error_log("Entering Api"); 
         
 	require_once '../includes/configuration.inc.php';
-	require_once '../includes/UserAccount.class.php';
+	require_once '../includes/data_classes/UserAccount.class.php';
         
 	$response = array();
 	
