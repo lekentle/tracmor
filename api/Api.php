@@ -3,7 +3,7 @@
         error_log("Entering Api"); 
        
 	require_once('../includes/prepend.inc.php');
-	QApplication::Authenticate(3);
+	//QApplication::Authenticate(3);
 	require_once(__FORMBASE_CLASSES__ . '/UserAccountListFormBase.class.php');
 
 
@@ -18,7 +18,7 @@
             function __construct($call, $payload) {
                 
                 $this->response =  array();
-                $this->apicall = $params['apicall'];
+                $this->apicall = $call;
                 $this->request = $payload;
                 //Default response
                 $response['error'] = true; 
@@ -29,9 +29,9 @@
             function isTheseParametersAvailable($params){
 
                 foreach($params as $param){
-                        if(!isset($payload[$param])){
-                                return false; 
-                        }
+                    if(!isset($payload[$param])){
+                            return false; 
+                    }
                 }
                 return true; 
             }
