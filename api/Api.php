@@ -21,8 +21,8 @@
                 $this->apicall = $call;
                 $this->request = $payload;
                 //Default response
-                $response['error'] = true; 
-                $response['message'] = 'Invalid Operation Called';
+                $this->response['error'] = true; 
+                $this->$response['message'] = 'Invalid Operation Called';
              }
 
             
