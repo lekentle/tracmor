@@ -41,7 +41,7 @@
             private function isTheseParametersAvailable($params){
 
                 foreach($params as $param){
-                    if(!isset($this->$payload[$param])){
+                    if(!isset($this->$request[$param])){
                             return false; 
                     }
                 }
@@ -57,8 +57,8 @@
                
        		if($this->isTheseParametersAvailable(array('username', 'password'))){
 					
-                    $username = $payload['username'];
-                    $password = $payload['password']; 
+                    $username = $this->request['username'];
+                    $password = $this->request['password']; 
 
                     $objUserAccount = UserAccount::LoadByUsername($username);
 
