@@ -23,10 +23,22 @@
                 //Default response
                 $this->response['error'] = true; 
                 $this->response['message'] = 'Invalid Operation Called';
+                
+                $this->processCall();
              }
-
             
-            function isTheseParametersAvailable($params){
+            private function processCall() {
+                
+                 switch ($this->apicall){
+                    case 'login' : return $this->login();
+                        break;
+                    default : return $this->response;
+                }
+              
+                
+            } 
+            
+            private function isTheseParametersAvailable($params){
 
                 foreach($params as $param){
                     if(!isset($payload[$param])){
@@ -36,12 +48,11 @@
                 return true; 
             }
             
-            function syncLoookups (){
-                
-                
+            private function syncLoookups (){
+                 
             }
             
-            function login (){
+            private function login (){
                 
                
        		if(isTheseParametersAvailable(array('username', 'password'))){
@@ -54,25 +65,25 @@
 
                     // Check if that username exists
                     if (!$objUserAccount) {
-                        $response['error'] = true; 
-                        $response['message'] = 'Invalid username or password.'; 
+                        $this->response['error'] = true; 
+                        $this->response['message'] = 'Invalid username or password.'; 
 
                         // Check that the user account is Active
                     }elseif (!$objUserAccount->ActiveFlag) {
-                        $response['error'] = true; 
-                        $response['message'] = 'The account is disabled. please contact the administrator.';
+                        $this->response['error'] = true; 
+                        $this->response['message'] = 'The account is disabled. please contact the administrator.';
 
                     }
                     // Check to see if the password hashes match
                     elseif (!QApplication::CheckPassword(sha1($password), $objUserAccount->PasswordHash)) {
-                        $response['error'] = true; 
-                        $response['message'] = 'Wrong password.';
+                        $this->response['error'] = true; 
+                        $this->response['message'] = 'Wrong password.';
                     }
                     else {
 
-                        $response['error'] = false; 
-                        $response['message'] = 'Login successfull'; 
-                        $response['user'] = $user; 
+                        $this->response['error'] = false; 
+                        $this->response['message'] = 'Login successfull'; 
+                        //$this->response['user'] = $user; 
 
                     }
                 }
