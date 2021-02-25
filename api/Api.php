@@ -41,7 +41,7 @@
             private function isTheseParametersAvailable($params){
 
                 foreach($params as $param){
-                    if(!isset($this->$request[$param])){
+                    if(!isset($this->request[$param])){
                             return false; 
                     }
                 }
