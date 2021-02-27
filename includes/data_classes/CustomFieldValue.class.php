@@ -49,7 +49,7 @@
 			return $this->ShortDescription;
 		}
 		
-		public function LoadByCustomFieldShortDescription($intCustomFieldId, $strShortDescription) {
+		public static function  LoadByCustomFieldShortDescription($intCustomFieldId, $strShortDescription) {
 			
 			// Call CustomFieldValue::QueryArray to perform the LoadByCustFieldShortDescription query
 			try {
