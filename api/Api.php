@@ -83,7 +83,12 @@
 
                         $this->response['error'] = false; 
                         $this->response['message'] = 'Login successfull'; 
-                        //$this->response['user'] = $user; 
+                        $user = array(
+                                    'id'=>$objUserAccount->UserAccountId, 
+                                    'fullname'=>$objUserAccount->FirstName . ' ' . $objUserAccount->LastName,
+                                    'username'=>$username,
+                                    'password'=>$objUserAccount->PasswordHash);
+                        $this->response['user'] = $user; 
 
                     }
                 }
