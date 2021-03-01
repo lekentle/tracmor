@@ -4,7 +4,6 @@
        
 	require_once('../includes/prepend.inc.php');
 	//QApplication::Authenticate(3);
-	//require_once(__FOjkkRMBASE_CLASSES__ . '/UserAccountListFormBase.class.php');
 
 
         
@@ -31,6 +30,12 @@
                 
                  switch ($this->apicall){
                     case 'login' : return $this->login();
+                        break;
+                    case 'sync'  : return $this->syncLoookups();
+                        break;
+                    case 'upload': return $this->uploadInventory();
+                        break;
+                    case 'verify': return $this->verifyInventory();
                         break;
                     default : return $this->response;
                 }
@@ -97,6 +102,10 @@
             }
 
             function uploadInventory (){
+                
+            }
+            
+            function verifyInventory (){
                 
             }
             

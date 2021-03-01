@@ -167,7 +167,7 @@
 			}
 
 			if ($objClass) {
-				// Globalize
+				// GlobalizeRun
 				$_FORM = $objClass;
 
 				$objClass->strCallType = $_POST['Qform__FormCallType'];

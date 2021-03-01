@@ -198,15 +198,16 @@
 
 				if (array_key_exists('strReferer', $_GET)) {
 					$strRedirect = $_GET['strReferer'];
-				} else if ($objAssetRoleModule->AccessFlag) {
-				// If the user has access to the assets module, send them there, otherwise...
-					$strRedirect = __SUBDIRECTORY__ . '/assets/';
-					$intModule = 2;
-				}
+				} 
 				// If the user has access to the inventory module, send them there.
 				else if ($objInventoryRoleModule->AccessFlag) {
 					$strRedirect = __SUBDIRECTORY__ . '/inventory/';
 					$intModule = 3;
+				}                  
+				// If the user has access to the assets module, send them there, otherwise...
+                                 else if ($objAssetRoleModule->AccessFlag) {
+					$strRedirect = __SUBDIRECTORY__ . '/assets/';
+					$intModule = 2;
 				}
 				// If the user has access to the contacts module, send them there.
 				else if ($objContactsRoleModule->AccessFlag) {
