@@ -69,7 +69,7 @@
                     $this->response['categoroes']    = array();
                 }
 
-                $locations = Location::LoadAllLocations();
+                $locations = Location::LoadAllLocationsAsCustomArray();
                 
                 
                 if (!is_null($locations) && count($locations) > 0)
