@@ -55,6 +55,47 @@
             
             private function syncLoookups (){
                 
+                $categories = Category::LoadAllAsCustomArray(false, true);
+                
+                
+                if (!is_null($categories) && count($categories) > 0)
+                {
+                    $this->response['error'] = false; 
+                    $this->response['message'] = 'Category retrieval successful'; 
+                    $this->response['categoroes']    = $categories;
+                } else if (count($categories) == 0){
+                    $this->response['error'] = false; 
+                    $this->response['message'] = 'List of categories is empty'; 
+                    $this->response['categoroes']    = array();
+                }
+
+                $locations = Location::LoadAllLocations();
+                
+                
+                if (!is_null($locations) && count($locations) > 0)
+                {
+                    $this->response['error'] = false; 
+                    $this->response['message'] = 'Location retrieval successful'; 
+                    $this->response['areas']    = $locations;
+                } else if (count($locations) == 0){
+                    $this->response['error'] = false; 
+                    $this->response['message'] = 'List of locations is empty'; 
+                    $this->response['areas']    = array();
+                }
+                
+                $manufactures = Manufacturer::LoadAllAsCustomArray();
+                
+                
+                if (!is_null($manufactures) && count($manufactures) > 0)
+                {
+                    $this->response['error'] = false; 
+                    $this->response['message'] = 'Manufacturers retrieval successful'; 
+                    $this->response['manufactures']    = $manufactures;
+                } else if (count($locations) == 0){
+                    $this->response['error'] = false; 
+                    $this->response['message'] = 'List of manufactures is empty'; 
+                    $this->response['manufactures']    = array();
+                }
                 
                  
             }
