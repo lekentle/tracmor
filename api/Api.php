@@ -62,11 +62,11 @@
                 {
                     $this->response['error'] = false; 
                     $this->response['message'] = 'Category retrieval successful'; 
-                    $this->response['categoroes']    = $categories;
+                    $this->response['categories']    = $categories;
                 } else if (count($categories) == 0){
                     $this->response['error'] = false; 
                     $this->response['message'] = 'List of categories is empty'; 
-                    $this->response['categoroes']    = array();
+                    $this->response['categories']    = array();
                 }
 
                 $locations = Location::LoadAllLocationsAsCustomArray();
